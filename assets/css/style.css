@@ -1,0 +1,105 @@
+.slides {
+  position: relative;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide {
+  font-style: 40px;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: brown;
+  color: white;
+}
+
+.slide:nth-of-type(1) {
+  background: red;
+}
+
+.slide:nth-of-type(2) {
+  background: orange;
+}
+
+.slide:nth-of-type(3) {
+  background: green;
+}
+
+.slide:nth-of-type(4) {
+  background: blue;
+}
+
+.slide:nth-of-type(5) {
+  background: purple;
+}
+
+.slide:nth-of-type(6) {
+  background: yellow;
+}
+
+.slide:nth-of-type(7) {
+  background: gray;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indicators > li {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.indicators .active {
+  background-color: tomato;
+}
+
+.indicator,
+.control {
+  margin-right: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cccccc;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 20px;
+  min-width: 20px;
+}
