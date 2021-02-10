@@ -1,12 +1,12 @@
 .slides {
     position: relative;
     height: 150px;
-
     margin-bottom: 20px;
 }
 
 .slide {
     position: absolute;
+    box-sizing: border-box;
     left: 0;
     top: 0;
     width: 100%;
@@ -14,19 +14,16 @@
     opacity: 0;
     z-index: 1;
     transition: opacity 0.5s;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 40px;
+    color: white;
+    background: brown;
 }
 
 .active {
     opacity: 1;
     z-index: 2;
-}
-
-.slide {
-    font-style: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: brown;
-    color: white;
 }
 
 .slide:nth-of-type(1) {
@@ -58,7 +55,7 @@
 }
 
 .controls {
-    display: flex;
+    display: none;
     justify-content: center;
 }
 

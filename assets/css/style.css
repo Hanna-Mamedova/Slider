@@ -6,6 +6,8 @@
 
 .slide {
   position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   left: 0;
   top: 0;
   width: 100%;
@@ -15,20 +17,16 @@
   -webkit-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 40px;
+  color: white;
+  background: brown;
 }
 
 .active {
   opacity: 1;
   z-index: 2;
-}
-
-.slide {
-  font-style: 40px;
-  padding: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: brown;
-  color: white;
 }
 
 .slide:nth-of-type(1) {
@@ -60,9 +58,7 @@
 }
 
 .controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

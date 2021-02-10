@@ -49,6 +49,12 @@ class Carousel {
         this.prevBtn = this.container.querySelector('#prev-btn');
         this.nextBtn = this.container.querySelector('#next-btn');
 
+        let controlbtns = document.querySelectorAll('.controls');
+
+        for (let i = 0; i < controlbtns.length; i++) {
+            controlbtns[i].style.display = 'flex';
+        };
+
     };
 
     _initIdicators() {
